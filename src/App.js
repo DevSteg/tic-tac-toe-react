@@ -1,5 +1,6 @@
 import './App.css';
 import { Board } from './components/Board'
+import { Reset } from './components/Reset';
 
 const App = () => {
   return ( 
@@ -8,6 +9,7 @@ const App = () => {
         <h1>Tic Tac Toe</h1>
       </header>
       <Board />
+      <Reset />
     </div>
   );
 }
