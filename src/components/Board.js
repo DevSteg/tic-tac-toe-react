@@ -1,4 +1,5 @@
 import React , {useEffect, useState} from "react";
+import { Reset } from "./Reset";
 
 export const Board = () => {
 
@@ -28,10 +29,13 @@ export const Board = () => {
   }, [board])
 
   return (
-    <div className="Board">
-      {board.map((tile, index) => {
-        return <div onClick={() => handleClick(index)} className="square" key={index}>{tile}</div>
-      })}
-    </div>
+    <main>
+      <div className="Board">
+        {board.map((tile, index) => {
+          return <div onClick={() => handleClick(index)} className="square" key={index}>{tile}</div>
+        })}
+      </div>
+      <Reset setBoard={setBoard}/>
+    </main>
   )
 }
