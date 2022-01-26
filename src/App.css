@@ -9,6 +9,11 @@
   position: relative;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
+
 .Board {
   background-color: #F7C548;
   width: 19rem;
@@ -53,5 +58,51 @@
 .resetBtn:hover {
   background-color: #e44f4f;
   box-shadow: 0 0.5em 0.5em -0.4em #C42021;
+  transform: translateY(-0.25em);
+}
+
+.scoreboard {
+  color: #F7C548;
+  font-weight: 900;
+  font-size: 1.5rem;
+  background-color: #C42021;
+  padding: 0 3rem 1rem 3rem;
+  border-radius: 3rem;
+  position: absolute;
+  margin-left: 6rem;
+  margin-top: 3rem;
+}
+
+.scoreboard h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+.scoreboard h2 span {
+  margin: 0 1rem;
+  background-color: #181D27;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.scoreTitle {
+  margin-top: 0.5rem;
+}
+
+.resetSb {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #F7C548;
+  color: #181D27;
+  font-weight: 700;
+  font-size: 0.7rem;
+  margin-left: 7rem;
+}
+
+.resetSb:hover {
+  background-color: #f8d272;
+  box-shadow: 0 0.5em 0.5em -0.4em #F7C548;
   transform: translateY(-0.25em);
 }
