@@ -5,8 +5,12 @@
 .title {
   color: #F7C548;
   font-weight: 700;
-  font-size: 4rem;
-  position: relative;
+  font-size: 6rem;
+  margin: 0;
+}
+
+.title span {
+  color: #C42021;
 }
 
 main {
@@ -31,7 +35,7 @@ main {
   height: 6rem;
   background-color: #181D27;
   border-radius: 1.5rem;
-  color: #F7C548;
+  color: #C42021;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +54,7 @@ main {
   border: none;
   border-radius: 1rem;
   background-color:#C42021;
-  color: antiquewhite;
+  color: #181D27;
   font-weight: 700;
   font-size: 1.5rem;
 }
