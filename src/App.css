@@ -1,112 +1,156 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .title {
-  color: #F7C548;
-  font-weight: 700;
-  font-size: 6rem;
-  margin: 0;
+	color: #f7c548;
+	font-weight: 700;
+	font-size: 6rem;
+	margin: 0;
 }
 
 .title span {
-  color: #C42021;
+	color: #c42021;
 }
 
 main {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
-.Board {
-  background-color: #F7C548;
-  width: 19rem;
-  padding: 4rem;
-  margin: 5rem auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border-radius: 3rem;
+.board {
+	background-color: #f7c548;
+	width: 19rem;
+	padding: 4rem;
+	margin: 5rem auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border-radius: 3rem;
 }
 
 .square {
-  margin: 5px auto ;
-  width: 6rem;
-  height: 6rem;
-  background-color: #181D27;
-  border-radius: 1.5rem;
-  color: #C42021;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 4.5rem;
-  font-weight: 700;
+	margin: 5px auto;
+	width: 6rem;
+	height: 6rem;
+	background-color: #181d27;
+	border-radius: 1.5rem;
+	color: #c42021;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 4.5rem;
+	font-weight: 700;
 }
 
 .square:hover,
 .square:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em #181D27;
-  transform: translateY(-0.05em);
+	box-shadow: 0 0.5em 0.5em -0.4em #181d27;
+	transform: translateY(-0.05em);
 }
 
 .resetBtn {
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 1rem;
-  background-color:#C42021;
-  color: #181D27;
-  font-weight: 700;
-  font-size: 1.5rem;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 1rem;
+	background-color: #c42021;
+	color: #181d27;
+	font-weight: 700;
+	font-size: 1.5rem;
 }
 
 .resetBtn:hover {
-  background-color: #e44f4f;
-  box-shadow: 0 0.5em 0.5em -0.4em #C42021;
-  transform: translateY(-0.25em);
+	background-color: #e44f4f;
+	box-shadow: 0 0.5em 0.5em -0.4em #c42021;
+	transform: translateY(-0.25em);
 }
 
 .scoreboard {
-  color: #F7C548;
-  font-weight: 900;
-  font-size: 1.5rem;
-  background-color: #C42021;
-  padding: 0 3rem 1rem 3rem;
-  border-radius: 3rem;
-  position: absolute;
-  margin-left: 6rem;
-  margin-top: 3rem;
+	color: #f7c548;
+	font-size: 1.5rem;
+	background-color: #c42021;
+	padding: 0 3rem 1rem 3rem;
+	border-radius: 3rem;
+	position: absolute;
+	margin-left: 6rem;
+	margin-top: 3rem;
 }
 
 .scoreboard h2 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  padding: 0 1rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	padding: 0 3%;
 }
 
 .scoreboard h2 span {
-  margin: 0 1rem;
-  background-color: #181D27;
-  padding: 0.5rem 1rem;
-  border-radius: 0.4rem;
+	margin: 0 1rem;
+	background-color: #181d27;
+	padding: 0.5rem 1rem;
+	border-radius: 0.4rem;
 }
 
 .scoreTitle {
-  margin-top: 0.5rem;
+	margin-top: 0.5rem;
 }
 
 .resetSb {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 0.5rem;
-  background-color: #F7C548;
-  color: #181D27;
-  font-weight: 700;
-  font-size: 0.7rem;
-  margin-left: 7rem;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 0.5rem;
+	background-color: #f7c548;
+	color: #181d27;
+	font-weight: 700;
+	font-size: 0.7rem;
+	margin-left: 7rem;
 }
 
 .resetSb:hover {
-  background-color: #f8d272;
-  box-shadow: 0 0.5em 0.5em -0.4em #F7C548;
-  transform: translateY(-0.25em);
+	background-color: #f8d272;
+	box-shadow: 0 0.5em 0.5em -0.4em #f7c548;
+	transform: translateY(-0.25em);
+}
+
+@media only screen and (max-width: 1200px) {
+	main {
+		flex-direction: column;
+	}
+
+	.scoreboard {
+		font-size: 0.7rem;
+		padding: 0 1rem 0.5rem 1rem;
+		border-radius: 1.5rem;
+		margin: 3rem 35%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.title {
+		font-size: 3rem;
+	}
+
+	.board {
+		width: 12rem;
+		padding: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	.square {
+		width: 3.5rem;
+		height: 3.5rem;
+		border-radius: 0.7rem;
+		margin: 3px auto;
+		font-size: 2.5rem;
+	}
+
+	.resetBtn {
+		padding: 0.5rem 1rem;
+		border-radius: 0.6rem;
+		font-size: 0.7rem;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.scoreboard {
+		margin: 3rem 20%;
+	}
 }
