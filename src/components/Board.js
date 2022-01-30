@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Reset } from "./Reset";
 import { Scoreboard } from "./Scoreboard";
+import { WinnerAlert } from "./WinnerAlert";
 
 // Winning combinations array
 let win_pattern = [
@@ -44,13 +45,6 @@ export const Board = () => {
 		}
 	}, [board]);
 
-	// useEffect for winner alert
-	useEffect(() => {
-		if (winner !== "") {
-			alert(`The Winner is ${winner}`);
-		}
-	}, [winner]);
-
 	// Set X and O count state and useEffect for counting each winner
 	const [xWin, setXWin] = useState(0);
 	const [oWin, setOWin] = useState(0);
@@ -66,6 +60,7 @@ export const Board = () => {
 
 	return (
 		<main>
+			<WinnerAlert setBoard={setBoard} winner={winner} setWinner={setWinner} />
 			<section>
 				<div className="board">
 					{/* function for creating each sqaure on the game board */}

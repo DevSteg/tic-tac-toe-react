@@ -1,8 +1,9 @@
 import React from "react";
 
-export const Reset = ({ setBoard }) => {
+export const Reset = ({ setBoard, setWinner }) => {
 	const reloadGame = () => {
 		setBoard(["", "", "", "", "", "", "", "", ""]);
+		setWinner("");
 	};
 	return (
 		<button className="resetBtn" onClick={reloadGame}>
